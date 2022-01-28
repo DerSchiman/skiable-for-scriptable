@@ -10,7 +10,8 @@
   https://www.bergfex.at/oesterreich/schneewerte/
 */
 
-
+if (arg.widgetParameter == null) {
+	throw new Error("Please long press the widget and add the ski resort as parameter.")
 const skiresort = args.widgetParameter || 'Sölden';
 
 if (config.runsInWidget) {
